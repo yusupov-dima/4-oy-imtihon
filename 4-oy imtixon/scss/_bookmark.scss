@@ -1,0 +1,198 @@
+.hero{
+    .bookmark{
+        margin-top: 10px;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(0, 26, 255);
+        padding-top: 20px;
+        &__title{
+            font-family: Rubik;
+            font-weight: normal;
+            font-size: 24px;
+            padding: 0 25px;
+            line-height: 28px;        
+            color: #000000;
+        }
+        &__content{
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 155.6%;
+            color: #000000;
+            margin-top: 10px;
+            padding: 0 25px;
+    
+        }
+        &__list{
+            margin-top: 40px;
+            list-style: none;
+            padding: 0;
+            &__item{
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                height: 72px;
+                padding: 0 25px;
+                background: #d6d6d63f;
+                margin: 15px 0;
+                transition: all .5s;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                -o-transition: all .5s;
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.144);
+                }
+                .bookmark__btns{
+                    & > button {
+                        border:none;
+                    }
+                }
+                
+                .bookmark__info {
+                    display: flex;
+                    flex-direction: column;
+                    .bookmarks__title{
+                        font-family: Rubik;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #000000;
+                    }
+                    .bookmarks__author{
+                        font-family: Noto Sans;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: #757881;
+                        margin-top: 5px;
+                    }
+            
+                }
+            }
+        }
+      
+    }
+    .cotalog{
+        width: 1000px;
+        .book__list{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-right: 30px;
+            background: #f1f1f1;
+            &__item{
+                background: white;
+                width: 290px;
+                height: 500px;
+                margin: 10px 0;
+                display: flex;
+                padding: 18px 20px;
+                flex-direction: column;
+                // border: 1px solid red;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                .bookmarkLink, .moreInfo, .readLink {
+                    width: 110px;
+                    height: 37px;
+                    border-radius: 4px;
+                    font-family: Rubik;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 17px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    text-align: center;
+                    padding: 10px;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                    
+                }
+                .book__title{                                     
+                    font-family: Rubik;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: black;
+                    line-height: 21px;
+                    margin-top: 25px;
+                }
+                .book__author{                    
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-decoration: none;
+                    color: #757881;
+                }
+                .book__year{
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #757881;
+                }
+                .book__img{
+                    width: 255px;
+                    height: 255px;
+                    // margin-left: 10px;
+                }
+                .bookmarkLink{                    
+                    background: #FFD80D;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    color: #000000;
+                    width: 120px;
+                    padding: 10px 10px;
+                    &:active{
+                        opacity: 1;
+                        box-shadow: 0 0 10px #FFD80D;
+                    }
+                }
+                .moreInfoBtn{
+                    background: rgba(13, 117, 255, 0.05);
+                    text-decoration: none;
+                    // margin-left: 100px;
+                    width: 120px;  
+                    margin-left: 10px;
+                    text-align: center;
+                    padding: 8px;
+                    &:active{
+                        opacity: 1;
+                        box-shadow: 0 0 10px rgba(96, 96, 219, 0.404);
+                    }              
+                    
+                }
+                .readLink{
+                    width: 246px;
+                    width: 100%;
+                    height: 37px;
+                    background: #75828A;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.pagination{
+    display: flex;
+    align-items:center;
+    .page-link:hover{
+        cursor: pointer;
+    }
+    .page-link:focus{
+        background: red!important;
+    }
+}

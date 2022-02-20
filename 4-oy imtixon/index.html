@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+  
+    <section class="container">
+        <div class="header d-flex">
+            <img src="./img/main/logo.png" alt="logo">
+            <label class="header__label">      
+                <img data-search="search" src="./img/main/search.png" alt="">          
+                <input type="text" class="header__search" id="searchInput" value="java" placeholder="Search books">
+            </label>
+            <img src="./img/main/sun.png" alt="sun">
+            <a href="login.html" class="logout">Logout</a>
+        </div>
+        <div class="results d-flex">
+            <div class="results__div"> Showing <span class="amount__result"> 0</span> Result(s)</div>
+            <button type="button" class="sortByDate">Order by newest </button>
+        </div>
+        <div class="hero d-flex ">
+            <div class="bookmark">
+                <div class="bookmark__title">Bookmarks</div>
+                <div class="bookmark__content"> If you don't like to read, you haven't found the right book</div>
+                
+                <ul class="bookmark__list"> 
+                    <li class="bookmark__list__item">
+                        <div class="bookmark__info"> 
+                            <div class="bookmarks__title"> Python</div>
+                            <div class="bookmarks__author">David M. Beazley </div>
+                        </div>
+                        <div class="bookmark__btns">
+                            <button type="button"> <img src="./img/main/book-open.png" alt="bookopen"> </button>
+                            <button type="button"> <img src="./img/main/delete.png" alt="bookopen"> </button>                   
+                        </div>
+                    </li>
+                    <li class="bookmark__list__item">
+                        <div class="bookmark__info"> 
+                            <div class="bookmarks__title"> Python</div>
+                            <div class="bookmarks__author">David M. Beazley </div>
+                        </div>
+                        <div class="bookmark__btns">
+                            <button type="button"> <img src="./img/main/book-open.png" alt="bookopen"> </button>
+                            <button type="button"> <img src="./img/main/delete.png" alt="bookopen"> </button>                   
+                        </div>
+                    </li>
+                    <li class="bookmark__list__item">
+                        <div class="bookmark__info"> 
+                            <div class="bookmarks__title"> Python</div>
+                            <div class="bookmarks__author">David M. Beazley </div>
+                        </div>
+                        <div class="bookmark__btns">
+                            <button type="button"> <img src="./img/main/book-open.png" alt="bookopen"> </button>
+                            <button type="button"> <img src="./img/main/delete.png" alt="bookopen"> </button>                   
+                        </div>
+                    </li>
+                </ul>
+            
+            </div>
+
+            <div class="cotalog">
+                <ul class="book__list">
+                    
+                    
+                </ul>
+            </div>
+            
+        </div>
+                <ul class="pagination justify-content-center" >
+                    <li class="page-item">
+                        <span data-task="paginationbtnPrev" class="page-link pagePrev"></span>
+                    </li>
+                    <li class="pageCount d-flex ">
+                        <div class="per_page1 page-link">1</div>
+                        <div class="per_page2 page-link">2</div>
+                        <div class="per_Dots page-link">...</div>
+                        <div class="per_page3 page-link ">8</div>
+                        <div class="per_page4 page-link">9</div>
+                    </li>
+                    <li class="page-item">
+                        <span data-task="paginationbtnNext" class="page-link pageNext"></span>
+                    </li>
+                </ul>
+
+
+    </section>
+
+    
+    <template class="booklist-template" >
+        <li class="book__list__item " id="book-item">
+            <img class="book__img" src="." alt="book">
+            <div class="book__title">Python </div>
+            <div class="book__author"> David M. Beazley</div>
+            <div class="book__year"> 2009</div>
+            <div class="d-flex mt-2 mb-2 justify-content-between"> 
+                <button type="button" data-bookmark="likeBook" class="bookmarkLink" id="bookmarkLink">Bookmark </button>
+                <button class="moreInfoBtn">More Info </button>
+            </div>
+            <a href="" class="readLink">Read</a>
+        </li>
+    </template>
+  
+
+    <template id="bookmark-template">
+        <li class="bookmark__list__item">
+            <div class="bookmark__info"> 
+                <div class="bookmarks__title"> Python</div>
+                <div class="bookmarks__author">David M. Beazley </div>
+            </div>
+            <div class="bookmark__btns">
+                <button type="button"> <img src="./img/main/book-open.png" alt="bookopen"> </button>
+                <button type="button" class=".delete-btn" data-set="delete"> <img src="./img/main/delete.png" alt="delete"> </button>                   
+            </div>
+        </li>
+    </template>
+</body>
+
+
+<template class="bookmark-template"></template>
+<script src="./js/check-login.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/ordered.js"></script>
+<script src="./js/localStorage.js"></script>
+
+</html>

@@ -1,0 +1,23 @@
+@import "./bookshelter/login";
+@import "./book_cotalog";
+@import "./bookmark";
+@import "./overlay";
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Noto+Sans+Display:wght@500&family=Rubik:wght@400;500&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    img{
+        display: flex;
+    }
+}

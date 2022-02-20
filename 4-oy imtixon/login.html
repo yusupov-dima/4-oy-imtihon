@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <div class="notifications"></div>
+    <div class="login">
+        <form action="" class="login__form form">  
+            <div class="form__logo mb-5"> <img src="./img/bookshelter_logo.png" alt=""></div>
+            <label class="form__email">
+                   
+                <input class="form__email__input" placeholder="USERNAME" type="text">
+            </label>
+            
+            <label class="form__password">
+                
+                <input class="form__password__input" placeholder="PASSWORD" type="password">
+            </label>
+
+            <button type="submit" class="form__submit">Login</button>
+            <a href="https://reqres.in/" class="form__forgot"> Forgot password?</a>
+        </form>
+    </div>
+
+   <template id="alertTemplate">
+        <div class="alert">
+            message
+        </div>
+   </template>
+</body>
+<script src="./js/validations.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/some.js"></script>
+
+</html>
